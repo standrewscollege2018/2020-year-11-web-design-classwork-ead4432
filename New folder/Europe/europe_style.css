@@ -1,0 +1,86 @@
+/* redfine the tags */
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  background-color: rgb(166, 132, 186);
+}
+@font-face {
+  font-family: Photoshoot;
+  src: url(Photoshoot.ttf)
+}
+h1{
+  color: rgb(117, 40, 38);
+  font-family: Photoshoot, Calibri, sans-serif;
+  margin: 0 0 20px 0;
+}
+h2{
+  color: rgb(91, 113, 235);
+  font-family: Photoshoot;
+  margin: 25px 0 25px 0;
+}
+p{
+  font-family: cursive, Calibri, sans-serif;
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+a{
+  color: rgb(0, 255, 0);
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: line-through;
+  color: rgb(0, 255, 255);
+}
+a:link{
+  color: rgb(0, 100, 0);
+}
+ul{
+  margin-left: 30px;
+}
+.
+.body {
+  display: grid;
+  grid-template-columns: auto(1fr);
+}
+.bannercontainer {
+  position: sticky;
+  top: 0;
+  background-color: rgb(255, 0, 0);
+  height: 100px;
+  padding-top: 30px;
+  display:grid;
+  grid-template-columns: 2(1fr)
+}
+.navbar {
+  text-align: right;
+}
+.back {
+  text-align: right;
+}
+.title{
+  text-align: left;
+}
+.content{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 20px;
+  grid-gap: 20px;
+  padding: 0 10px 10px 10px;
+}
+.card{
+  background-color: rgb(0, 255, 0);
+  border: 5px solid rgb(12, 185, 111);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card > img {
+  max-width: auto;
+  max-height: auto;
+}
+@media only screen and (max-width: 900px) {
+  .body {
+    background-color: rgb(255, 255, 0);
+  }
+}
