@@ -4,7 +4,7 @@
   margin: 0px;
 }
 body{
-  background-color: rgb(166, 132, 186);
+  background-color: rgb(166, 0, 255);
 }
 @font-face {
   font-family: Photoshoot;
@@ -24,6 +24,7 @@ p{
   font-family: cursive, Calibri, sans-serif;
   margin-bottom: 10px;
   line-height: 25px;
+  color: rgb(255, 255, 0);
 }
 a{
   color: rgb(0, 255, 0);
@@ -39,48 +40,97 @@ a:link{
 ul{
   margin-left: 30px;
 }
-.
-.body {
-  display: grid;
-  grid-template-columns: auto(1fr);
-}
 .bannercontainer {
   position: sticky;
   top: 0;
-  background-color: rgb(255, 0, 0);
-  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background-color: rgb(252, 3, 232);
+
+}
+.title {
+  grid-column: span 2;
   padding-top: 30px;
-  display:grid;
-  grid-template-columns: 2(1fr)
+  margin-left: 20px;
 }
 .navbar {
   text-align: right;
 }
-.back {
-  text-align: right;
+.main-container {
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
 }
-.title{
-  text-align: left;
+.contents {
+
+
 }
-.content{
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin-top: 20px;
-  grid-gap: 20px;
-  padding: 0 10px 10px 10px;
+.description {
+  display: grid;
+  grid-template-rows: auto;
+
 }
-.card{
+.card {
   background-color: rgb(0, 255, 0);
-  border: 5px solid rgb(12, 185, 111);
+  border: 10px solid rgb(0, 238, 255);
   border-radius: 20px;
   overflow: hidden;
+  margin: 10px 10px 10px 10px;
+  width: auto;
+
 }
-.card > img {
-  max-width: auto;
-  max-height: auto;
+.content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
-@media only screen and (max-width: 900px) {
-  .body {
-    background-color: rgb(255, 255, 0);
+.back {
+  text-align: right;
+  padding: 50px 20px 0 0;
+  font-size: 90px;
+}
+.button {
+  border: 5px solid rgb(12, 0, 0);
+  background-color: rgb(12, 0, 0);
+  border-radius: 5px;
+  margin-left: 90px;
+}
+
+.all-content {
+
+  margin: 0 auto 0 auto;
+  background-color: rgb(220, 20, 60);
+}
+
+#nav-toggle, .burger-menu {
+  display: none;
+}
+@media only screen and (max-width: 1000px) {
+  .bannercontainer{
+    grid-template-columns: 1fr;
+  }
+  .title {
+    grid-column: 1;
+  }
+  .navbar {
+    text-align: left;
+    grid-column: 2;
+  }
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+  .burger-menu {
+    display: inline-block;
+  }
+  .left-menu {
+    display: none;
+  }
+
+
+  #nav-toggle:checked ~ .left-menu {
+    display: grid;
+    grid-row: 2;
+    grid-column: span 3;
+    margin-top: 10px;
   }
 }
