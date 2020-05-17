@@ -1,0 +1,52 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  background-color: rgb(166, 0, 255);
+}
+@font-face {
+  font-family: Photoshoot;
+  src: url(Photoshoot.ttf)
+}
+.bannercontainer {
+  position: sticky;
+  top: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background-color: rgb(252, 3, 232);
+
+}
+.title {
+  grid-column: span 2;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 20px;
+}
+.navbar {
+  text-align: right;
+}
+.maincontent {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+}
+.right-column {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+.card {
+  background-color: rgb(0, 255, 0);
+  border: 10px solid rgb(0, 238, 255);
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 10px 10px 10px 10px;
+  width: auto;
+  margin: 50px;
+  padding: 50px;
+}
+/* Resize images */
+.img-resize {
+  max-width: 100%;
+  height:auto;
+}
