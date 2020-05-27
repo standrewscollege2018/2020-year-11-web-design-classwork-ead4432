@@ -1,0 +1,23 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  background-color: rgb(209, 155, 29);
+}
+form{
+  text-align: center;
+  margin: 300px;
+}
+.input_number{
+  font-size: 50px;
+}
+.input_button{
+  font-size: 50px;
+
+}
+.welcome_message{
+  font-size: 100px;
+  text-align: center;
+  
+}
