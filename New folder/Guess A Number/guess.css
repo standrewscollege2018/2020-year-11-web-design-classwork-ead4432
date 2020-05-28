@@ -7,7 +7,7 @@ body{
 }
 form{
   text-align: center;
-  margin: 300px;
+  margin-top: 300px;
 }
 .input_number{
   font-size: 50px;
@@ -16,8 +16,21 @@ form{
   font-size: 50px;
 
 }
-.welcome_message{
+.wrongmessage{
   font-size: 100px;
   text-align: center;
+  color: red;
+  margin-bottom: 50px;
+  margin-top: 0px;
 
+}
+.rightmessage{
+  font-size: 100px;
+  text-align: center;
+  color: green;
+}
+.start{
+  font-size: 100px;
+  text-align: center;
+  color: blue;
 }

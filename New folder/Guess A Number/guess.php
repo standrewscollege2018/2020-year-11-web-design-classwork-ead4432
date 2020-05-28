@@ -15,14 +15,15 @@
         if (isset($_GET['guess'])) {
           $answer = $_GET['guess'];
           if ($answer == 'right') {
-            echo "<p> You Got It Right </p>";
+            echo "<p class = 'rightmessage'> You Got It Right </p>
+            <img src='sombrero_cat.gif' alt='Cat gif'>";
           }else if ($answer == 'toolow') {
-            echo "<p> Too Low Pls Try Again </p>";
+            echo "<p class='wrongmessage'> Too Low Pls Try Again </p>";
           }else {
-            echo "<p> Too High Pls Try Again </p>";
+            echo "<p class = 'wrongmessage'> Too High Pls Try Again </p>";
         }
       } else {
-          echo "<p> Pls Enter a number </p>";
+          echo "<p class = 'start'> Pls Enter a number </p>";
         }
          ?>
     </div>
