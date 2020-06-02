@@ -16,7 +16,7 @@
           $answer = $_GET['guess'];
           if ($answer == 'right') {
             echo "<p class = 'rightmessage'> You Got It Right </p>
-            <img src='sombrero_cat.gif' alt='Cat gif'>";
+            <img src='sombrero_cat.gif' alt='Cat gif'><img src='sombrero_cat.gif' alt='Cat gif'><img src='sombrero_cat.gif' alt='Cat gif'><img src='sombrero_cat.gif' alt='Cat gif'><img src='sombrero_cat.gif' alt='Cat gif'>";
           }else if ($answer == 'toolow') {
             echo "<p class='wrongmessage'> Too Low Pls Try Again </p>";
           }else {

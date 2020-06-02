@@ -37,7 +37,9 @@
               </div>
             </div>
             <div class="navbar">
-              <p><a href="index.php?groovy=go">Get groovy</a> | <a href="index.php">Stop<a/> | <a href="menu.php">Menu</a> | <a href="log_in.php">Log In</a> | <a href="about_us.php">About Us</a>
+              <p><a href="index.php?groovy=go">Get groovy</a> | <a href="index.php">Stop<a/> |
+                <a href="menu.php">Menu</a> | <a href="log_in.php">Log In</a> |
+                 <a href="about_us.php">About Us</a> | <a href="sign_up.php">Create An Account</a>
               </p>
             </div>
           </div>

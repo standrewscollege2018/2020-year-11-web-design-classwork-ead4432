@@ -50,7 +50,8 @@
               ?>
               <p><a href="logout.php">Logout</p>
                <a href="index.php">Home</a>
-
+               <a href="menu.php">Order from home</a>
+               <a href="booking.php">Book Now!</a>
            </div>
          </div>
          <div class="right-column">
